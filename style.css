@@ -99,6 +99,7 @@ li{
 .menu__backdrop{
     position: absolute;
     background-color: #242424;
+    width: 100%;
     top: 0;
     left: 0;
     bottom: 0;
@@ -301,7 +302,6 @@ button:active{
 
 #features{
     padding: 8vw;
-    height: 1000px;
     background-color: rgba(115, 66,214, 0.1);
 }
 
@@ -393,7 +393,7 @@ h1{
 }
 
 h2{
-    font: 26px;
+    font-size: 26px;
 }
 
 button{
@@ -411,11 +411,11 @@ button{
 
 /*SMALL PHONES, LARGE SMARTPHONES*/
 
-@media(max-width: 550px){
-    nav__links{
-        display: none;
+@media(max-width: 550px) {
+.nav__links{
+    display: none;
     }
-}
+
 
 .highlight {
     width: 100%;
@@ -428,4 +428,5 @@ button{
 
 .menu__block{
     display: block;
+}
 }
