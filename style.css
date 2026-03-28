@@ -38,7 +38,7 @@ a: hover{
     text-decoration: none;
 }
 
-.nav_container{
+.nav__container{
     width: 100%;
     display: flex;
     padding: 0 24px;
@@ -66,7 +66,7 @@ li{
 
 }
 
-.nav_link{
+.nav__link{
     margin-left: 16px;
     text-decoration: none;
     font-size: 20px;
@@ -75,16 +75,16 @@ li{
     padding: 8px;
 }
 
-.nav_link:hover{
+.nav__link:hover{
     text-decoration: underline;
 }
 
-.nav_link--primary{
+.nav__link--primary{
     border: 2px solid #7342d7;
     border-radius: 4px;
 }
 
-.nav_link--primary:hover{
+.nav__link--primary:hover{
     text-decoration: none;
 }
 
@@ -132,7 +132,7 @@ li{
     padding: 32px 0;
 }
 
-.menu_link{
+.menu__link{
     color: white;
 }
 
@@ -154,7 +154,7 @@ header{
     height: calc(100vh - 80px);
 }
 
-.header_container{
+.header__container{
     padding: 24px;
     width: 100%;
     max-width: 1200px;
@@ -165,7 +165,7 @@ header{
     justify-content: space-around;
 }
 
-.header_description{
+.header__description{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,7 +201,7 @@ button:active{
     border: none;
 }
 
-.header_img--wrapper{
+.header__img--wrapper{
     padding: 20px;
     z-index: 2;
 }
@@ -262,23 +262,23 @@ button:active{
 
 .highlight__wrapper{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .highlight{
     padding: 0 24px;
     width: calc(100%/3);
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.highlight_para{
+.highlight__para{
     text-align: center;
     max-width: 280px;
 }
 
-.highlight_img{
+.highlight__img{
     border: 2px solid #7442d758;
     color: #7342d7;
     width: 100px;
@@ -291,9 +291,10 @@ button:active{
     margin-bottom: 24px;
 }
 
-.highlight_subtitle{
+.highlight__subtitle{
     font-style: 20px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 /*FEATURES*/
@@ -383,7 +384,7 @@ button:active{
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
 
-@media(max-width 768px){
+@media(max-width: 768px){
     .header__description{
         padding: 0 24px;
     }
@@ -416,6 +417,15 @@ button{
     }
 }
 
-.menu___block{
+.highlight {
+    width: 100%;
+    
+}
+
+.highlight:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.menu__block{
     display: block;
 }
